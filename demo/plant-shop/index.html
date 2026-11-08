@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#10281c">
+<meta name="robots" content="noindex">
+<title>窗邊葉店 — 虛構店家示範，非客戶案例</title>
+<meta name="description" content="虛構店家示範，非客戶案例。窗邊葉店的商品、價格與營業時間都是示例資料。沒有真實地址、電話或人名。此頁不收集資料、不結帳。">
+<meta property="og:title" content="窗邊葉店 — 虛構店家示範，非客戶案例">
+<meta property="og:description" content="示例商品、示例價格與示例營業時間。沒有真實地址、電話或人名。此頁不收集資料、不結帳。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310281c'/%3E%3Cpath d='M32 50c0-16 8-24 18-28-6 10-6 18-2 28H32z' fill='%23d7e4d4'/%3E%3Cpath d='M32 50c0-16-10-22-20-24 8 8 10 16 8 24h12z' fill='%237dba8a'/%3E%3C/svg%3E">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#f3eee4;
+  --paper-2:#fbf7f0;
+  --ink:#1c2b22;
+  --muted:#3e5648;
+  --line:#ddd4c4;
+  --leaf:#1b5c3a;
+  --leaf-2:#2f7d52;
+  --deep:#10281c;
+  --clay:#9c4e32;
+  --gold:#6a4518;
+  --mist:#e5f0e6;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Microsoft JhengHei",sans-serif;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Songti TC",PMingLiU,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:196px}
+body{margin:0;background:
+  radial-gradient(900px 420px at 100% -10%,#e7f2e4 0%,transparent 60%),
+  radial-gradient(700px 380px at -10% 20%,#f6e7d4 0%,transparent 55%),
+  var(--paper);
+  color:var(--ink);font-family:var(--sans);line-height:1.7}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
+.skip{position:absolute;top:-80px;left:16px;background:var(--deep);color:var(--paper);padding:12px 16px;z-index:6}
+.skip:focus{top:12px}
+.top{position:sticky;top:0;z-index:5;background:var(--deep);color:var(--paper)}
+.banner{margin:0;padding:10px 20px;text-align:center;font-size:16px;line-height:1.45}
+.banner strong{font-size:17px;letter-spacing:.01em}
+.banner span{display:inline}
+.status{margin:0;padding:6px 16px 8px;text-align:center;background:#183528;color:#f3eee4;font-size:14px;line-height:1.45}
+.bar{display:flex;align-items:center;gap:20px;width:min(1120px,calc(100% - 40px));margin:0 auto;min-height:58px;border-top:1px solid #2c4a38}
+.logo{font-family:var(--serif);font-size:22px;text-decoration:none;letter-spacing:.02em}
+nav{display:flex;gap:18px;margin-left:auto;flex-wrap:wrap}
+nav a{color:#d5e4d6;text-decoration:none;font-size:14px;padding:8px 0}
+nav a[aria-current="page"],nav a:hover{color:#fff}
+.wrap{width:min(1120px,calc(100% - 48px));margin:auto}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);gap:36px;align-items:center;padding:48px 0 20px}
+.kicker{font-size:13px;letter-spacing:.14em;color:var(--clay);margin:0 0 12px}
+h1{font-family:var(--serif);font-size:clamp(48px,7vw,84px);line-height:1.02;font-weight:560;letter-spacing:-.03em;margin:0 0 12px}
+.hero-note{margin:0 0 16px;font-size:18px;color:var(--leaf);font-weight:700}
+.dek{font-size:18px;color:var(--muted);max-width:38rem;margin:0 0 24px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 18px;border-radius:999px;border:1px solid var(--deep);background:var(--deep);color:var(--paper);font:600 15px var(--sans);text-decoration:none;cursor:pointer}
+.btn.secondary{background:transparent;color:var(--deep)}
+.btn:hover{transform:translateY(-1px)}
+.hero-art{background:var(--paper-2);border:1px solid var(--line);border-radius:28px;padding:18px;box-shadow:0 24px 50px #1c2b2214}
+.hours-strip{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:12px;margin:12px 0 8px}
+.chip{background:color-mix(in srgb,var(--paper-2) 84%,white);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.chip span{display:block;font-size:12px;letter-spacing:.08em;color:var(--gold)}
+.chip strong{font-weight:700}
+section{padding:56px 0;scroll-margin-top:200px}
+.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:22px}
+h2{font-family:var(--serif);font-size:clamp(32px,4vw,48px);line-height:1.15;font-weight:560;margin:0;letter-spacing:-.03em}
+.section-head p,.visit p{color:var(--muted);margin:8px 0 0;max-width:36rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;list-style:none;margin:0;padding:0}
+.plant{display:grid;grid-template-columns:148px 1fr;gap:8px 16px;background:var(--paper-2);border:1px solid var(--line);border-radius:24px;padding:16px;align-items:center}
+.plant-art{background:linear-gradient(180deg,var(--mist),#f7f3ea);border-radius:18px;padding:8px}
+.plant h3{margin:0;font-size:24px;font-family:var(--serif);font-weight:560}
+.latin{margin:0;color:var(--gold);font-size:13px;letter-spacing:.04em}
+.plant p{margin:8px 0}
+.tag{display:inline-block;font-size:12px;letter-spacing:.08em;color:var(--leaf);border:1px solid #b7d2c0;border-radius:999px;padding:2px 8px}
+.price{display:flex;justify-content:space-between;gap:12px;align-items:baseline;border-top:1px solid var(--line);padding-top:10px;margin-top:12px}
+.price b{font-size:22px;font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+.ghost{width:100%;background:#fff;color:var(--clay);border-color:var(--line)}
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;list-style:none;margin:0;padding:0}
+.notes li{background:var(--paper-2);border-top:3px solid var(--leaf);border-radius:0 0 18px 18px;padding:18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-left:1px solid var(--line)}
+.notes .num{font-variant-numeric:tabular-nums;color:var(--leaf);font-size:13px}
+.notes h3{margin:8px 0;font-size:20px;font-family:var(--serif);font-weight:560}
+.notes p{margin:0;color:var(--muted)}
+.visit{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;background:var(--deep);color:var(--paper);border-radius:28px;padding:32px}
+.visit h2,.visit p{color:inherit}
+.visit p{color:#d5e4d6}
+.panel{background:#183528;border-radius:20px;padding:20px}
+.panel a{color:#f3eee4;font-weight:700;text-underline-offset:3px}
+.panel .after{margin:16px 0 0}
+.panel .btn{margin-top:4px}
+#demo-result{min-height:4.8em;margin:0 0 16px}
+table{width:100%;border-collapse:collapse;background:var(--paper-2);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+caption{text-align:left;font-weight:700;padding:0 0 10px;color:var(--ink)}
+th,td{text-align:left;padding:12px 16px;border-top:1px solid var(--line)}
+th{width:34%;font-weight:600}
+footer{padding:8px 0 36px;color:var(--muted);font-size:14px}
+.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px}
+.foot a{color:var(--leaf)}
+.repeat{margin:0 0 10px;color:var(--leaf);font-weight:700}
+@media(max-width:800px){
+  .banner span{display:block;font-weight:400;font-size:14px;color:#d5e4d6}
+  .bar,.wrap{width:calc(100% - 28px)}
+  .bar{align-items:flex-start;flex-direction:column;gap:0;padding-bottom:8px;min-height:0}
+  nav{margin:0 0 8px;gap:8px 14px}
+  .hero,.hours-strip,.grid,.notes,.visit,.plant{grid-template-columns:1fr}
+  .hero{padding-top:28px}
+  .section-head{display:block}
+  section{padding:40px 0}
+  .visit{padding:22px}
+  h1{font-size:52px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header class="top">
+  <p class="banner"><strong>虛構店家示範，非客戶案例</strong> <span>商品、價格與營業時間皆為示例資料。沒有真實地址、電話或人名。</span></p>
+  <p id="demo-result" class="status" role="status">按鈕不會收集或送出任何資料。</p>
+  <div class="bar">
+    <a class="logo" href="#top">窗邊葉店</a>
+    <nav aria-label="示範頁導覽">
+      <a href="/">主站</a>
+      <a href="/services/landing-page/">服務說明</a>
+      <a href="#plants">示例商品</a>
+      <a href="#hours">示例時間</a>
+      <a href="#visit">示範按鈕</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <div class="hero" id="top">
+    <div>
+      <p class="kicker">FICTIONAL DEMO · 示例店名</p>
+      <h1>窗邊葉店</h1>
+      <p class="hero-note">虛構店家示範，非客戶案例</p>
+      <p class="dek">這一頁示範「最多五個區塊」的靜態店家頁可以怎麼排。店名、植物、價格與時間都是為了展示版面而寫的示例，不能訂購，也不會把你帶到任何真實店家。</p>
+      <div class="actions">
+        <a class="btn" href="#plants">看示例商品</a>
+        <button class="btn secondary" type="button" data-demo-action="頁首按鈕">這個按鈕不會送出資料</button>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 560 620" role="img" aria-label="窗邊三盆植物的平面插圖，不是店內照片">
+        <title>窗邊植物插圖</title>
+        <rect x="36" y="28" width="488" height="360" rx="18" fill="#d7ebe3"/>
+        <rect x="52" y="44" width="220" height="154" fill="#e7f6f1"/>
+        <rect x="288" y="44" width="220" height="154" fill="#e9f3ea"/>
+        <rect x="52" y="214" width="220" height="154" fill="#e4f1ea"/>
+        <rect x="288" y="214" width="220" height="154" fill="#e7f4ee"/>
+        <path d="M272 44v324M52 206h456" stroke="#10281c" stroke-width="8"/>
+        <rect x="36" y="28" width="488" height="360" rx="18" fill="none" stroke="#10281c" stroke-width="10"/>
+        <circle cx="430" cy="108" r="36" fill="#f3d48a"/>
+        <rect x="24" y="388" width="512" height="22" rx="6" fill="#c9b59a"/>
+        <ellipse cx="150" cy="520" rx="78" ry="12" fill="#e4d5c2"/>
+        <path d="M108 470h86l-12 42H120z" fill="#b85c3c"/>
+        <rect x="100" y="456" width="102" height="18" rx="4" fill="#8d4330"/>
+        <path d="M151 452c-2-34-8-64-20-92" stroke="#143d28" stroke-width="6" fill="none" stroke-linecap="round"/>
+        <path d="M134 368c-34-16-74-2-86 32-10 30 12 58 46 64 20 4 38-8 44-26 4-14 2-34-4-70z" fill="#1b5c3a"/>
+        <path d="M146 392c26-30 66-34 88-8 14 18 8 46-18 56-18 8-36-2-42-18-4-12-10-24-28-30z" fill="#2f7d52"/>
+        <g fill="#d7ebe3">
+          <ellipse cx="98" cy="384" rx="5" ry="14" transform="rotate(-34 98 384)"/>
+          <ellipse cx="116" cy="408" rx="4" ry="11" transform="rotate(-20 116 408)"/>
+          <ellipse cx="178" cy="418" rx="4" ry="11" transform="rotate(22 178 418)"/>
+        </g>
+        <ellipse cx="390" cy="548" rx="70" ry="12" fill="#e4d5c2"/>
+        <path d="M348 470h84l-12 58h-60z" fill="#9c4e32"/>
+        <rect x="340" y="456" width="100" height="18" rx="4" fill="#7d3b28"/>
+        <path d="M392 462l14-150 16 150z" fill="#1b5c3a"/>
+        <path d="M366 462l8-116 16 116z" fill="#143d28"/>
+        <path d="M418 462l10-124 16 124z" fill="#2f7d52"/>
+        <path d="M348 462l8-78 14 78z" fill="#3d8b5e"/>
+        <path d="M406 330l4 110" stroke="#e6c98a" stroke-width="3"/>
+        <ellipse cx="278" cy="560" rx="46" ry="10" fill="#e4d5c2"/>
+        <path d="M248 500h60l-8 42h-44z" fill="#c46b4a"/>
+        <rect x="242" y="488" width="72" height="16" rx="4" fill="#9a4630"/>
+        <path d="M278 486c-40-6-58-44-36-72 14 20 30 34 36 72z" fill="#1b5c3a"/>
+        <path d="M278 486c40-4 60-42 38-72-16 20-32 36-38 72z" fill="#2f7d52"/>
+        <path d="M278 468c-18-24-16-66 0-88 16 22 18 64 0 88z" fill="#f7f4ee" stroke="#1b5c3a" stroke-width="3"/>
+        <path d="M278 448v-48" stroke="#c4a15a" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hours-strip" aria-label="示例資訊摘要">
+    <p class="chip"><span>示例營業時間</span><strong>週三至週日 12:00–18:00</strong></p>
+    <p class="chip"><span>示例公休</span><strong>週一、週二</strong></p>
+    <p class="chip"><span>地址與電話</span><strong>示範頁不提供</strong></p>
+  </div>
+
+  <section id="plants" aria-labelledby="plants-title">
+    <div class="section-head">
+      <div>
+        <h2 id="plants-title">示例商品</h2>
+        <p>四張卡片都是示例。植物學名是真實物種名稱，用來讓版面好看；價格是編來排版的，不是報價，也不能訂。</p>
+      </div>
+    </div>
+    <ul class="grid">
+      <li>
+        <article class="plant">
+          <div class="plant-art" aria-hidden="true">
+            <svg viewBox="0 0 280 300">
+              <ellipse cx="140" cy="268" rx="72" ry="12" fill="#e4d5c2"/>
+              <path d="M92 214h96l-14 42H106z" fill="#b85c3c"/>
+              <rect x="84" y="202" width="112" height="18" rx="4" fill="#8d4330"/>
+              <path d="M140 198c-4-30-10-56-20-78" stroke="#143d28" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <path d="M124 128c-42-14-90 2-102 42-10 34 16 66 58 72 24 4 46-10 52-32 4-16 0-40-8-82z" fill="#1b5c3a"/>
+              <path d="M138 146c32-36 84-38 106-4 14 22 4 52-28 64-22 8-42-2-50-22-6-16-12-28-28-38z" fill="#2f7d52"/>
+              <g fill="#e5f0e6">
+                <ellipse cx="84" cy="164" rx="6" ry="16" transform="rotate(-36 84 164)"/>
+                <ellipse cx="108" cy="190" rx="5" ry="13" transform="rotate(-18 108 190)"/>
+                <ellipse cx="186" cy="176" rx="5" ry="14" transform="rotate(24 186 176)"/>
+                <ellipse cx="168" cy="204" rx="4" ry="11" transform="rotate(10 168 204)"/>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <p class="tag">示例商品 01</p>
+            <h3>龜背芋</h3>
+            <p class="latin">Monstera deliciosa</p>
+            <p>示例文案：裂葉，適合寫在商品卡上的兩行說明。這不是栽培保證。</p>
+            <p class="price"><span>示例價格</span> <b>NT$860</b></p>
+            <button class="btn ghost" type="button" data-demo-action="龜背芋">示例，無法訂購</button>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="plant">
+          <div class="plant-art" aria-hidden="true">
+            <svg viewBox="0 0 280 300">
+              <ellipse cx="140" cy="268" rx="72" ry="12" fill="#e4d5c2"/>
+              <path d="M96 214h88l-12 42H108z" fill="#9c4e32"/>
+              <rect x="88" y="202" width="104" height="18" rx="4" fill="#7d3b28"/>
+              <path d="M140 208 L156 62 L174 208 Z" fill="#1b5c3a"/>
+              <path d="M112 208 L124 92 L142 208 Z" fill="#143d28"/>
+              <path d="M168 208 L184 104 L202 208 Z" fill="#2f7d52"/>
+              <path d="M92 208 L102 132 L116 208 Z" fill="#3d8b5e"/>
+              <path d="M156 78 L162 190" stroke="#e6c98a" stroke-width="3" fill="none"/>
+              <path d="M124 108 L132 188" stroke="#e6c98a" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <div>
+            <p class="tag">示例商品 02</p>
+            <h3>虎尾蘭</h3>
+            <p class="latin">Dracaena trifasciata</p>
+            <p>示例文案：直立葉片，給新手看的短句。家中環境不同，這裡沒有個人建議。</p>
+            <p class="price"><span>示例價格</span> <b>NT$420</b></p>
+            <button class="btn ghost" type="button" data-demo-action="虎尾蘭">示例，無法訂購</button>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="plant">
+          <div class="plant-art" aria-hidden="true">
+            <svg viewBox="0 0 280 300">
+              <ellipse cx="140" cy="268" rx="72" ry="12" fill="#e4d5c2"/>
+              <path d="M98 214h84l-12 42h-60z" fill="#c46b4a"/>
+              <rect x="90" y="202" width="100" height="18" rx="4" fill="#9a4630"/>
+              <path d="M140 208c-56-8-82-58-48-94 22 28 40 48 48 94z" fill="#1b5c3a"/>
+              <path d="M140 208c56-6 86-54 52-94-24 28-42 50-52 94z" fill="#2f7d52"/>
+              <path d="M140 190c-26-34-24-92 0-122 24 30 26 88 0 122z" fill="#f7f4ee" stroke="#1b5c3a" stroke-width="4"/>
+              <path d="M140 168v-70" stroke="#c4a15a" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="140" cy="92" r="4" fill="#8d6a32"/>
+            </svg>
+          </div>
+          <div>
+            <p class="tag">示例商品 03</p>
+            <h3>白鶴芋</h3>
+            <p class="latin">Spathiphyllum wallisii</p>
+            <p>示例文案：白色佛焰苞只是這張卡片的視覺。按下按鈕不會留下預購。</p>
+            <p class="price"><span>示例價格</span> <b>NT$480</b></p>
+            <button class="btn ghost" type="button" data-demo-action="白鶴芋">示例，無法訂購</button>
+          </div>
+        </article>
+      </li>
+      <li>
+        <article class="plant">
+          <div class="plant-art" aria-hidden="true">
+            <svg viewBox="0 0 280 300">
+              <ellipse cx="140" cy="268" rx="72" ry="12" fill="#e4d5c2"/>
+              <path d="M100 220h80l-10 36H110z" fill="#b85c3c"/>
+              <rect x="92" y="208" width="96" height="16" rx="4" fill="#8d4330"/>
+              <g fill="none" stroke-linecap="round">
+                <path d="M140 214 C118 170 104 140 96 96" stroke="#1b5c3a" stroke-width="10"/>
+                <path d="M140 214 C140 160 142 130 140 86" stroke="#143d28" stroke-width="10"/>
+                <path d="M140 214 C164 168 184 142 198 102" stroke="#2f7d52" stroke-width="10"/>
+                <path d="M140 214 C112 176 86 166 62 156" stroke="#3d8b5e" stroke-width="8"/>
+                <path d="M140 214 C170 176 204 166 230 154" stroke="#1b5c3a" stroke-width="8"/>
+              </g>
+            </svg>
+          </div>
+          <div>
+            <p class="tag">示例商品 04</p>
+            <h3>小山蘇</h3>
+            <p class="latin">Asplenium nidus</p>
+            <p>示例文案：鳥巢狀葉片，用來補滿第四張卡。沒有庫存數量。</p>
+            <p class="price"><span>示例價格</span> <b>NT$640</b></p>
+            <button class="btn ghost" type="button" data-demo-action="小山蘇">示例，無法訂購</button>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section id="hours" aria-labelledby="hours-title">
+    <div class="section-head">
+      <div>
+        <h2 id="hours-title">示例營業時間</h2>
+        <p>真實案件只會放你同意公開的到店資訊。這一頁故意不編地址、電話、信箱或人名。</p>
+      </div>
+    </div>
+    <table>
+      <caption>以下全部是示例資料，不是真實店家的營業時間。</caption>
+      <tbody>
+        <tr><th scope="row">週一</th><td>公休（示例）</td></tr>
+        <tr><th scope="row">週二</th><td>公休（示例）</td></tr>
+        <tr><th scope="row">週三至週日</th><td>12:00–18:00（示例）</td></tr>
+        <tr><th scope="row">地址</th><td>不提供。示範頁沒有門牌、地區或地圖。</td></tr>
+        <tr><th scope="row">電話與人名</th><td>不提供。沒有店主、店員或客服姓名。</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="notes" aria-labelledby="notes-title">
+    <div class="section-head">
+      <div>
+        <h2 id="notes-title">三段示例說明</h2>
+        <p>這是第五個區塊之前的補充區，示範「一段說明」可以怎麼分成三點。內容是通用例句，不是針對任何人家中環境的建議。</p>
+      </div>
+    </div>
+    <ol class="notes">
+      <li>
+        <div class="num">01 · 示例</div>
+        <h3>表土乾了再澆</h3>
+        <p>示例句子，用來佔一個說明位置。請不要把它當成你的植物診斷。</p>
+      </li>
+      <li>
+        <div class="num">02 · 示例</div>
+        <h3>避開久曬</h3>
+        <p>示例句子。每個窗戶的光都不一樣，這裡沒有辦法判斷。</p>
+      </li>
+      <li>
+        <div class="num">03 · 示例</div>
+        <h3>價格不是報價</h3>
+        <p>卡片上的 NT$ 數字只讓版面有價格的樣子，不能結帳。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="visit" aria-labelledby="visit-title">
+    <div class="visit">
+      <div>
+        <h2 id="visit-title">這個動作停在你的畫面上。</h2>
+        <p>示範頁沒有表單、購物車或結帳。按鈕只改寫畫面上的說明，不會把姓名、電話或訊息送到任何地方。</p>
+      </div>
+      <div class="panel">
+        <p id="demo-result-mirror">按鈕不會收集或送出任何資料。</p>
+        <button class="btn" type="button" data-demo-action="頁尾按鈕">看看按下之後</button>
+        <p class="after"><a href="/services/landing-page/#contact">若要為自己的店做一頁，回到測試方案</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="wrap">
+  <p class="repeat">虛構店家示範，非客戶案例</p>
+  <div class="foot">
+    <span>示例商品、示例價格、示例時間 · 不收集資料</span>
+    <span><a href="/">Kuanpo Lin 主站</a> · <a href="/services/landing-page/">服務說明</a></span>
+  </div>
+</footer>
+<script>
+document.querySelectorAll("[data-demo-action]").forEach(function (button) {
+  button.addEventListener("click", function () {
+    var name = button.getAttribute("data-demo-action");
+    var message = (name === "頁首按鈕" || name === "頁尾按鈕")
+      ? "這是示範。沒有表單、沒有購物車、沒有結帳，也沒有任何資料被送出。"
+      : "「" + name + "」是示例商品，不能訂購。沒有任何資料被送出。";
+    document.getElementById("demo-result").textContent = message;
+    document.getElementById("demo-result-mirror").textContent = message;
+  });
+});
+</script>
+</body>
+</html>

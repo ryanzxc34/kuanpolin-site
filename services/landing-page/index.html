@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090c12">
+<title>台灣小店一頁式網站 · 測試價 NT$1,500 — Kuanpo Lin</title>
+<meta name="description" content="測試中的服務：單一語言、最多五個區塊的靜態一頁式網站，測試價新台幣 1,500 元。不含網域、主機、部署、後端、金流與維護。沒有客戶案例、評價或銷售保證。">
+<meta property="og:title" content="台灣小店一頁式網站 · 測試價 NT$1,500">
+<meta property="og:description" content="單一語言、最多五個區塊的靜態頁。完整文案與照片到齊後，目標三個工作天交出第一版，並含一次彙整的小幅修改。此頁不收款。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23090c12'/%3E%3Ctext x='8' y='43' fill='%238eb4ff' font-family='monospace' font-size='32'%3EKL%3C/text%3E%3C/svg%3E">
+<style>
+:root{color-scheme:dark;--bg:#090c12;--panel:#101620;--raised:#17202d;--text:#f2f5fa;--muted:#aeb9ca;--accent:#8eb4ff;--line:#283242;--radius:16px;--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:108px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.75}
+a{color:inherit}
+button,a{transition:background .2s,transform .2s,color .2s}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+a:active,button:active{transform:translateY(1px)}
+.skip{position:absolute;top:-80px;left:24px;background:var(--text);color:var(--bg);padding:12px;z-index:5}
+.skip:focus{top:12px}
+.wrap{width:min(1120px,calc(100% - 64px));margin:auto}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);z-index:4}
+.header{display:flex;align-items:center;gap:32px;min-height:76px}
+.brand{display:flex;align-items:center;gap:12px;font-size:18px;font-weight:600;text-decoration:none;white-space:nowrap}
+.mark{font:14px var(--mono);color:var(--accent);border:1px solid var(--line);padding:8px;border-radius:8px}
+nav{display:flex;gap:22px;margin-left:auto;flex-wrap:wrap}
+nav a{font-size:14px;color:var(--muted);text-decoration:none;padding:8px 0}
+nav a[aria-current="page"],nav a:hover{color:var(--accent)}
+.hero{padding:72px 0 28px;display:grid;grid-template-columns:1.3fr .8fr;gap:48px;align-items:end}
+.eyebrow{font:12px var(--mono);letter-spacing:.12em;color:var(--accent);display:flex;align-items:center;gap:12px}
+.eyebrow:before{content:"";height:6px;width:6px;background:var(--accent);border-radius:50%}
+h1{font-size:clamp(36px,5vw,64px);font-weight:600;letter-spacing:-.045em;line-height:1.2;margin:20px 0;text-wrap:balance}
+h1 .soft{color:var(--accent)}
+.lead{font-size:18px;color:var(--muted);max-width:640px;margin:0 0 28px;text-wrap:pretty}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:12px 20px;min-height:48px;border-radius:8px;font-size:14px;font-weight:600;background:var(--accent);color:var(--bg);text-decoration:none}
+.btn:hover{background:var(--text)}
+.btn.secondary{background:var(--raised);color:var(--text)}
+.btn.secondary:hover{background:var(--line)}
+.price-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.price-card .label,.label{font:12px var(--mono);color:var(--accent);letter-spacing:.08em}
+.amount{font-size:clamp(40px,5vw,56px);letter-spacing:-.04em;margin:12px 0 8px;font-weight:560}
+.price-card p{margin:0;color:var(--muted);font-size:14px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:28px 0 8px}
+.fact{border-top:1px solid var(--line);padding-top:12px;font-size:14px;color:var(--muted)}
+.fact strong{display:block;color:var(--text);font-weight:600;margin-bottom:4px}
+section{padding:64px 0;border-top:1px solid var(--line);scroll-margin-top:96px}
+h2{font-size:clamp(28px,3vw,40px);font-weight:560;letter-spacing:-.03em;line-height:1.3;margin:12px 0 12px;text-wrap:balance}
+.intro{color:var(--muted);max-width:680px;margin:0 0 28px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px 8px}
+.panel h3{margin:8px 0 12px;font-size:20px;font-weight:560}
+ul,ol{margin:0;padding:0 0 16px 1.2em;color:var(--muted)}
+li{margin:0 0 10px}
+li strong{color:var(--text);font-weight:600}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.step{border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;background:var(--panel)}
+.step .num{font:12px var(--mono);color:var(--accent)}
+.step h3{margin:10px 0;font-size:18px;font-weight:560}
+.step p,.callout p{margin:0;color:var(--muted)}
+.callout{margin-top:20px;padding:22px;border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(180deg,#142033,var(--panel));display:flex;justify-content:space-between;gap:24px;align-items:center}
+.callout h3{margin:0 0 8px;font-size:20px}
+.contact{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:start}
+.email{display:block;color:var(--accent);font:clamp(16px,2vw,22px) var(--mono);margin:12px 0 18px;overflow-wrap:anywhere;text-decoration:none}
+.contact-box{padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius)}
+.contact-box .btn{width:100%;margin-bottom:12px}
+.note{font-size:13px;color:var(--muted);margin:0}
+footer{padding:28px 0 40px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font:12px var(--mono);color:var(--muted);border-top:1px solid var(--line)}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent)}
+@media(max-width:800px){
+  .wrap{width:calc(100% - 32px)}
+  .header{flex-wrap:wrap;padding:12px 0;gap:8px 16px}
+  nav{width:100%;margin:0;gap:8px 16px}
+  .hero,.split,.steps,.contact,.callout{grid-template-columns:1fr;display:grid}
+  .facts{grid-template-columns:1fr 1fr}
+  .hero{padding-top:40px;gap:24px}
+  section{padding:48px 0}
+}
+@media(max-width:520px){.facts{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  a,button{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<header>
+  <div class="wrap header">
+    <a class="brand" href="/"><span class="mark">KL</span>Kuanpo Lin</a>
+    <nav aria-label="頁面導覽">
+      <a href="/">主站</a>
+      <a href="/services/landing-page/" aria-current="page">服務說明</a>
+      <a href="/demo/plant-shop/">店家示範</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="wrap">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">測試方案 · 繁體中文 · 非正式定價</p>
+      <h1>幫小店做一頁，<br><span class="soft">先把範圍說清楚。</span></h1>
+      <p class="lead">這是一項還在試做的服務。我用你已經準備好的文案與照片，做成單一語言、最多五個區塊的靜態一頁。測試價是新台幣 1,500 元，用來跑通合作流程。它不是促銷，沒有截止日期，也沒有名額限制。</p>
+      <div class="actions">
+        <a class="btn" href="/demo/plant-shop/">看虛構店家示範</a>
+        <a class="btn secondary" href="#contact">用既有信箱詢問</a>
+      </div>
+    </div>
+    <aside class="price-card" aria-label="測試價">
+      <div class="label">TEST PRICE</div>
+      <p class="amount">NT$1,500</p>
+      <p>新台幣測試價。此頁不收款，也沒有結帳。若雙方之後同意進行，付款方式另以書面確認，不在這個網站上處理。</p>
+    </aside>
+  </div>
+  <div class="facts">
+    <p class="fact"><strong>一種語言</strong>繁體中文，或你指定的另一種。</p>
+    <p class="fact"><strong>最多五個區塊</strong>靜態頁面，沒有後台。</p>
+    <p class="fact"><strong>一次小幅修改</strong>第一版之後，意見請一次彙整。</p>
+    <p class="fact"><strong>三個工作天</strong>只在完整文案與照片到齊後起算。</p>
+  </div>
+
+  <section id="scope" aria-labelledby="scope-title">
+    <p class="label">01 / 範圍</p>
+    <h2 id="scope-title">包含什麼，不包含什麼。</h2>
+    <p class="intro">測試價只涵蓋下面左邊的內容。右邊的項目即使跟網站有關，也不在 NT$1,500 裡面，也不會順便代辦。</p>
+    <div class="split">
+      <article class="panel">
+        <h3>包含</h3>
+        <ul>
+          <li><strong>單一語言的靜態一頁。</strong>內容寫在檔案裡，沒有會員、資料庫，也沒有會把訪客資料存下來的表單。</li>
+          <li><strong>最多五個區塊。</strong>例如開頭、商品或服務、時間或到店說明、一段補充、一個不收集資料的行動提示。名稱可以改，數量不能超過五個。</li>
+          <li><strong>用你提供的文字與照片排版。</strong>我處理結構、基本的手機與桌面排版，以及可讀性。</li>
+          <li><strong>交付靜態檔案。</strong>你拿到可以自己存放的頁面檔，不是一個已經上線的網址。</li>
+        </ul>
+      </article>
+      <article class="panel">
+        <h3>不包含</h3>
+        <ul>
+          <li><strong>網域</strong></li>
+          <li><strong>主機</strong></li>
+          <li><strong>部署或代為上線</strong></li>
+          <li><strong>後端</strong></li>
+          <li><strong>金流、購物車、結帳</strong></li>
+          <li><strong>後續維護與額外改稿</strong></li>
+          <li>多語言、第六個區塊、會員、收集個資的表單、訂位或庫存。</li>
+          <li>代寫整套品牌故事、代拍商品照，或用生成圖假裝那是你的商品。</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="timing" aria-labelledby="timing-title">
+    <p class="label">02 / 時程</p>
+    <h2 id="timing-title">三個工作天，只在材料到齊之後。</h2>
+    <p class="intro">第一版的目標是三個工作天。工作天指台灣週一至週五，不含週六、週日與國定假日。這是目標，不是保證一定達成。材料或範圍中途改變，就重新計算。</p>
+    <div class="steps">
+      <article class="step">
+        <div class="num">起算之前</div>
+        <h3>完整文案與照片都要到齊</h3>
+        <p>要放上頁面的文字已經寫完；要使用的照片已提供，而且你確認有權使用；店名與這一頁要完成的事也說清楚了。缺照片、文案還在改、或不確定要放哪些段落，都不算開始。</p>
+      </article>
+      <article class="step">
+        <div class="num">第一版之後</div>
+        <h3>一次彙整的小幅修改</h3>
+        <p>請把意見一次整理好。小幅修改只動既有區塊裡的文字、顏色、間距、圖片裁切或區塊順序。不加新區塊，不改成另一種網站，也不把上面排除的項目加回來。這一次改完，之後的修改要另外談。</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="workflow" aria-labelledby="workflow-title">
+    <p class="label">03 / 工作方式</p>
+    <h2 id="workflow-title">會用 AI 協助，不會拿 AI 充當案例。</h2>
+    <p class="intro">製作時我會使用 AI 工具幫忙整理大綱、草擬版面與撰寫程式。哪些內容採用、有沒有守住範圍、頁面能不能交付，由我檢查後決定。AI 不取代你要提供的文案與照片。</p>
+    <div class="split">
+      <article class="panel">
+        <h3>我不會做的事</h3>
+        <ul>
+          <li>編造客戶案例、評價、星等，或「已有多少店家採用」。</li>
+          <li>保證來客、營收或搜尋排名。</li>
+          <li>發明地址、電話或人名，讓示範看起來像真實案例。</li>
+          <li>用倒數、限量或假名額催促決定。</li>
+        </ul>
+      </article>
+      <article class="panel">
+        <h3>目前沒有客戶作品</h3>
+        <ul>
+          <li>這個網站沒有可公開的委託案例。</li>
+          <li>植栽頁是虛構示範，用來給你看「最多五個區塊的一頁」可以怎麼排。</li>
+          <li>頁面上的店名、商品、價格與時間都是示例，不是客戶成果。</li>
+          <li>主站上的網站需求清單仍是既有的 US$9 連結，與此測試價無關。</li>
+        </ul>
+      </article>
+    </div>
+    <div class="callout">
+      <div>
+        <h3>虛構店家示範，非客戶案例</h3>
+        <p>下一頁是一間不存在的植栽店。商品、價格與營業時間都標成示例資料，沒有真實地址、電話或人名，也沒有表單與結帳。</p>
+      </div>
+      <a class="btn" href="/demo/plant-shop/">開啟店家示範</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div>
+      <p class="label">04 / 詢問</p>
+      <h2 id="contact-title">沿用主站已經公開的信箱。</h2>
+      <p class="intro">這個測試方案沒有另外的聯絡窗口。請寫信到主站聯絡區同一個地址。此頁沒有表單，不會把信的內容存下來。</p>
+      <p class="note">主站的 <a href="https://ryanflux8.gumroad.com/l/odslc">網站需求清單（US$9）</a> 仍是另一項既有商品。它不是這次 NT$1,500 的付款方式。</p>
+    </div>
+    <div class="contact-box">
+      <div class="label">EMAIL</div>
+      <a class="email" href="mailto:klin@kuanpolin.com">klin@kuanpolin.com</a>
+      <a class="btn" href="mailto:klin@kuanpolin.com?subject=%E5%B0%8F%E5%BA%97%E4%B8%80%E9%A0%81%E5%BC%8F%E7%B6%B2%E7%AB%99%E6%B8%AC%E8%A9%A6%E6%96%B9%E6%A1%88&amp;body=%E4%BD%A0%E5%A5%BD%20Kuanpo%EF%BC%8C%0A%0A%E6%88%91%E6%83%B3%E8%A9%A2%E5%95%8F%E4%B8%80%E9%A0%81%E5%BC%8F%E7%B6%B2%E7%AB%99%E6%B8%AC%E8%A9%A6%E6%96%B9%E6%A1%88%EF%BC%88%E6%B8%AC%E8%A9%A6%E5%83%B9%20NT%241%2C500%EF%BC%89%E3%80%82%0A%0A%E5%BA%97%E5%90%8D%E6%88%96%E5%93%81%E7%89%8C%EF%BC%9A%0A%E9%A0%81%E9%9D%A2%E8%AA%9E%E8%A8%80%EF%BC%88%E5%8F%AA%E8%83%BD%E9%81%B8%E4%B8%80%E7%A8%AE%EF%BC%89%EF%BC%9A%0A%E8%A6%81%E6%94%BE%E4%B8%8A%E9%A0%81%E9%9D%A2%E7%9A%84%E6%96%87%E5%AD%97%E6%98%AF%E5%90%A6%E5%B7%B2%E7%B6%93%E5%AF%AB%E5%AE%8C%EF%BC%9A%0A%E7%85%A7%E7%89%87%E6%98%AF%E5%90%A6%E5%B7%B2%E5%82%99%E9%BD%8A%EF%BC%8C%E4%B8%94%E6%88%91%E6%9C%89%E6%AC%8A%E4%BD%BF%E7%94%A8%EF%BC%9A%0A%E9%80%99%E4%B8%80%E9%A0%81%E5%B8%8C%E6%9C%9B%E5%AE%A2%E4%BA%BA%E7%9C%8B%E5%AE%8C%E5%81%9A%E7%9A%84%E4%BA%8B%EF%BC%9A%0A%E5%85%B6%E4%BB%96%E8%A3%9C%E5%85%85%EF%BC%9A%0A%0A%E6%88%91%E4%BA%86%E8%A7%A3%E6%AD%A4%E5%83%B9%E6%A0%BC%E4%B8%8D%E5%90%AB%E7%B6%B2%E5%9F%9F%E3%80%81%E4%B8%BB%E6%A9%9F%E3%80%81%E9%83%A8%E7%BD%B2%E3%80%81%E5%BE%8C%E7%AB%AF%E3%80%81%E9%87%91%E6%B5%81%E8%88%87%E5%BE%8C%E7%BA%8C%E7%B6%AD%E8%AD%B7%E3%80%82%0A%0A%E8%AC%9D%E8%AC%9D%EF%BC%81">寄信詢問這個測試方案</a>
+      <p class="note">點擊後會開啟你的郵件程式，並附上詢問草稿。若沒有開啟，請直接寫到 klin@kuanpolin.com。</p>
+    </div>
+  </section>
+</main>
+<footer class="wrap">
+  <span>© 2026 Kuanpo Lin</span>
+  <span>測試價 NT$1,500 · 此頁不收款</span>
+  <span><a href="/">主站</a> · <a href="/demo/plant-shop/">店家示範</a></span>
+</footer>
+</body>
+</html>
