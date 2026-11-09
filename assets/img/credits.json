@@ -1,0 +1,77 @@
+{
+ "note": "Credits for the photographs in this folder: photos.mjs credits prints the footer block for the ones the pages use.",
+ "photos": [
+  {
+   "file": "photo-f99587733.webp",
+   "files": [
+    "photo-f99587733-500.webp",
+    "photo-f99587733-960.webp",
+    "photo-f99587733-1280.webp",
+    "photo-f99587733.webp",
+    "photo-f99587733-780x975.webp"
+   ],
+   "id": "f99587733",
+   "alt": "Bird nest fern in doors",
+   "by": "Hardyplants",
+   "licence": "CC0",
+   "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Bird_nest_fern_in_doors.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f145504410.webp",
+   "files": [
+    "photo-f145504410-500.webp",
+    "photo-f145504410-960.webp",
+    "photo-f145504410.webp"
+   ],
+   "id": "f145504410",
+   "alt": "Monstera deliciosa Monstera dziurawa 2023-10-31 01",
+   "by": "Agnieszka Kwiecień, Nova",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Monstera_deliciosa_Monstera_dziurawa_2023-10-31_01.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f153685442-960.webp",
+   "files": [
+    "photo-f153685442-500.webp",
+    "photo-f153685442-960.webp"
+   ],
+   "id": "f153685442",
+   "alt": "Snake plant Sansevieria growing in a pot portrait",
+   "by": "999real",
+   "licence": "CC0",
+   "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Snake_plant_Sansevieria_growing_in_a_pot_portrait.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f166819165-500.webp",
+   "files": [
+    "photo-f166819165-500.webp"
+   ],
+   "id": "f166819165",
+   "alt": "Peace Lily bloom",
+   "by": "Laksh9",
+   "licence": "CC BY 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Peace_Lily_bloom.jpg",
+   "source": "Wikimedia Commons"
+  },
+  {
+   "file": "photo-f92765373-500.webp",
+   "files": [
+    "photo-f92765373-500.webp"
+   ],
+   "id": "f92765373",
+   "alt": "Giant bird nest fern",
+   "by": "Suzanne ujen",
+   "licence": "CC0",
+   "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Giant_bird_nest_fern.jpg",
+   "source": "Wikimedia Commons"
+  }
+ ]
+}
