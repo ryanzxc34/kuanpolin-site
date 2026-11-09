@@ -1,0 +1,62 @@
+:root{--bg:#181b18;--panel:#20241f;--raised:#30362c;--text:#f1eee4;--muted:#bec2b7;--accent:#dce773;--line:#454b40;--radius:0px;--display:Georgia,"Noto Serif TC","Songti TC",serif}
+body{font-weight:400;background:var(--bg)}
+.wrap{width:min(1280px,calc(100% - 96px))}
+.header{min-height:108px;gap:24px}
+.brand{font:28px var(--display);letter-spacing:-.04em}
+.mark,.brand>.soft{display:none}
+nav{gap:24px}nav a{font-size:14px;min-height:44px;display:flex;align-items:center}
+.lang{border:0;border-radius:0;padding:8px 12px;font-family:inherit}
+header{border-color:var(--line)}
+.hero{padding:88px 0 72px;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:48px;align-items:center}
+.hero>div:first-child{position:relative;z-index:1}
+.eyebrow{font-family:inherit;font-size:12px;letter-spacing:.12em;color:var(--muted)}
+.eyebrow:before{display:none}
+h1{font-family:var(--display);font-size:clamp(56px,7.8vw,112px);font-weight:400;line-height:1.12;letter-spacing:-.055em;margin:32px 0}
+h1 .soft{color:var(--text)}
+h1 .soft:after{content:"。";color:var(--accent)}
+html[lang=en] h1 .soft:after{content:"."}
+.lead{max-width:440px;line-height:1.9;font-size:17px;margin-bottom:32px}
+.actions{align-items:center;gap:24px}
+.btn{border-radius:0;padding:16px 24px;font-weight:500;min-height:56px;gap:32px;font-size:15px}
+.btn:hover{background:var(--text);transform:translateY(-2px)}
+.btn.secondary{background:none;color:var(--text);padding:12px 0;font-size:14px}
+.btn.secondary:hover{background:none;color:var(--accent)}
+.availability{font-family:inherit;font-size:12px;margin-top:24px}
+.studio-photo{margin:0;position:relative;align-self:stretch;min-height:560px;background:var(--panel);overflow:hidden}
+.studio-photo img{display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0;object-position:62% center}
+.photo-label{position:absolute;bottom:16px;left:16px;right:16px;padding:8px 12px;font-size:11px;line-height:1.5;background:#181b18e8;color:var(--text);max-width:max-content}
+.scope{padding:24px 0 32px;font-family:inherit;font-size:12px;letter-spacing:.06em}
+section{padding:96px 0}
+.label{font-family:inherit;letter-spacing:.1em;color:var(--muted);font-size:12px}
+h2{font-family:var(--display);font-size:clamp(36px,4.6vw,64px);font-weight:400;line-height:1.25;letter-spacing:-.035em;margin-top:20px}
+.section-head{align-items:start;gap:48px;margin-bottom:56px}
+.section-intro{line-height:1.9;max-width:320px;padding-top:36px}
+.services{display:block}
+.service{border:0;border-top:1px solid var(--line);border-radius:0;background:none;padding:40px 0;display:grid;grid-template-columns:160px minmax(0,1fr) minmax(0,1fr);gap:0 40px}
+.service-top{grid-row:1/5;justify-content:start;gap:20px;align-items:start;font-family:inherit;padding-top:8px}
+.service-icon{display:none}
+.service h3{font-size:28px;font-weight:400;margin:0 0 24px;grid-column:2;line-height:1.5;text-wrap:balance}
+.service p{grid-column:3;grid-row:1/3;font-size:16px;line-height:1.9}
+.tags{grid-column:2;margin:0 0 24px;gap:8px 16px}
+.tag{border:0;border-radius:0;padding:0;color:var(--muted);font-size:13px}
+.text-link{grid-column:3;border:0;padding:12px 0;min-height:44px;color:var(--accent);font-size:14px}
+.text-link.soft,.text-link.stacked{font-size:13px;padding:12px 0;border:0;color:var(--muted)}
+.text-link:hover{color:var(--text)}
+.steps{gap:32px}.step{padding-top:24px}.step .num{font-family:inherit;color:var(--muted)}.step h3{font-size:20px;font-weight:400;margin:20px 0 16px}.step p{font-size:14px;line-height:1.9}
+.about{grid-template-columns:1fr 1fr;gap:96px}.about p{line-height:1.95}.credentials{gap:12px 24px;margin-top:32px}
+.contact{gap:96px}.contact h2{font-size:clamp(48px,6vw,88px)}.contact-box{background:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:32px 0}.email{font-family:inherit;font-size:clamp(20px,2.4vw,32px);color:var(--text);margin:24px 0 32px}.contact-box .btn{width:auto}.note{margin-top:20px}
+footer{font-family:inherit;padding:32px 0 40px;font-size:12px}
+@keyframes arrive{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero h1,.hero .lead,.hero .actions{animation:arrive .65s ease-out both}.hero .lead{animation-delay:.08s}.hero .actions{animation-delay:.16s}
+@media(min-width:1600px){.hero{padding:96px 0}}
+@media(max-width:1050px){.header{flex-wrap:wrap;padding:20px 0;gap:16px}.brand{margin-right:auto}nav{order:3;width:100%;justify-content:space-between;gap:16px}.lang{margin-left:auto}.hero{gap:32px}.studio-photo{min-height:500px}.service{grid-template-columns:100px 1fr 1fr;gap:0 24px}.about,.contact{gap:48px}}
+@media(max-width:800px){.wrap{width:calc(100% - 48px)}.header{min-height:80px}.brand{font-size:24px}nav{flex-wrap:wrap;justify-content:start;gap:4px 24px}nav a{font-size:13px}.hero{grid-template-columns:1fr;padding:48px 0;gap:40px}h1{font-size:clamp(56px,12vw,88px);margin:28px 0}.lead{max-width:540px}.studio-photo{min-height:0;aspect-ratio:5/4;width:100%}.studio-photo img{object-position:60% center}.scope{gap:12px;font-size:11px}section{padding:64px 0}.section-head{display:block;margin-bottom:40px}.section-intro{max-width:480px;padding-top:0;margin-top:24px}.service{grid-template-columns:1fr 1fr;gap:0 24px;padding:32px 0}.service-top{grid-column:1/-1;grid-row:auto;margin-bottom:24px}.service h3,.tags{grid-column:1}.service p{grid-column:2;grid-row:2/4}.text-link{grid-column:2}.about,.contact{grid-template-columns:1fr;gap:32px}.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.service{display:flex;gap:0}.service h3{font-size:26px;margin-bottom:20px}.service p{margin-bottom:24px}.tags{margin-bottom:20px}.text-link{margin-top:0}.service-top{margin-bottom:20px}.steps{grid-template-columns:1fr;gap:28px}.step{display:grid;grid-template-columns:32px 1fr;gap:0 16px}.step .num{grid-row:1/3;padding-top:4px}.step h3{margin:0 0 12px}.step p{grid-column:2}.actions{gap:12px 24px}.btn{font-size:14px;gap:20px;padding:14px 20px}.photo-label{font-size:10px}.availability{font-size:11px}.contact h2{font-size:48px}h2{font-size:36px}}
+@media(prefers-reduced-motion:reduce){.hero h1,.hero .lead,.hero .actions{animation:none}.btn:hover{transform:none}}
+.service-page h1{font-size:clamp(40px,4.6vw,64px);line-height:1.25;text-wrap:initial}
+.service-page h1 .soft:after{content:none}
+.service-page .price-card .amount{font-size:48px;color:var(--text);line-height:1.2;margin:16px 0}
+.service-page .callout{background:var(--panel)}
+.service-page .contact h2{font-size:clamp(32px,4vw,56px)}
+.service-page .step{display:block}
+@media(max-width:500px){.service-page h1{font-size:38px}.service-page .step h3{margin:16px 0}.service-page h2{font-size:30px}}
